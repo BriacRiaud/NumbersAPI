@@ -3,7 +3,7 @@
 // et voir https://www.youtube.com/watch?v=z9pcgJX1DdY
 // syntaxe avec then()
 function request_normale() {
-    fetch('https://api.clashroyale.com/v1/clans/%23G2RQJPL2/members',{
+    fetch('https://api.clashroyale.com/v1/clans/%23G2RQJPL2',{
     method : "GET",
     withCredentials : true,
     headers: {
@@ -27,3 +27,4 @@ async function request_async() {
 }
 //request_normale();
 request_async();
+//s,;d,bkguhzjskhjfsdngfds
