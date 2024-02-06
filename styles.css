@@ -1,10 +1,62 @@
 .titre {
     text-shadow: #cce4f4 0px 0px 10px, #cce4f4 0 0 60px;
-    margin: 0px;
-    padding: 0;
-    color: #02273f;
+    margin: 20px;
+    color: white;
     text-transform: uppercase;
     font-family: museo_sans, "Lucida Grande", "Lucida Sans", "Helvetica", sans-serif;
     font-weight: bold;
     font-size: 5em;
+    text-align: center;
+}
+
+#sous-titre {
+    text-shadow: #cce4f4 0px 0px 10px;
+    font-size: 2.5em;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+body {
+    background-image: url("https://w.forfun.com/fetch/c1/c106475dca9b6ebc5771abce1fc95782.jpeg") ;
+    background-size: absolute;
+    opacity: 1;
+}
+
+#sandbox-text {
+    -moz-transform: rotate(-9deg);
+    -ms-transform: rotate(-9deg);
+    -webkit-transform: rotate(-9deg);
+    transform: rotate(-9deg);
+    writing-mode: lr-tb;
+    font-size: 40px;
+    font-family: pastel_crayon, Palatino, Georgia, serif;
+    font-weight: normal;
+    position: absolute;
+    text-shadow: none;
+    color : white;
+    top: 230px;
+}
+
+#explaination{
+    text-shadow: #cce4f4 0px 0px 10px;
+    font-size: 1.4em;
+    color: white;
+    border : white 2px solid;
+    padding: 10px;
+    margin: 20px;
+    background-color: black;
+    inline-size: 500px;
+    writing-mode: horizontal-tb; 
+}
+
+#arrow{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    transform: rotate(33deg);
+
 }
