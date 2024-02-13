@@ -13,26 +13,25 @@
         <div id="sandbox-text">Explications</div>
         <img id="arrow" src="https://www.onlygfx.com/wp-content/uploads/2018/11/14-chalk-arrows-10.png" >
         <div class="grid">
-            <p id="explaination">Il est super simple d'utiliser notre site! il suffit de cliquer sur le boutton et ensuite d'écrire à la main votre nombre fétiche!</p>
+            <p id="explaination">Il est super simple d'utiliser notre site! Il suffit de rentrer votre nombre dans la barre blanche à droite, ensuite choisir le type d'infos renvoyé, puis cliquer sur le bouton "tester"!</p>
             <img id="arrow_mid" src="https://www.onlygfx.com/wp-content/uploads/2018/11/14-chalk-arrows-10.png">
             
             <form>
                 <input type="text" id="nombre" name="nombre"><br> 
                 
-                <input type="radio" id="trivia" name="selection" value="trivia">
+                <input type="radio" class="choix" name="selection" value="trivia">
                 <label for="trivia">Trivia</label><br>
-                <input type="radio" id="math" name="selection" value="math">
+                <input type="radio" class="choix" name="selection" value="math">
                 <label for="math">Math</label><br>
-                <input type="radio" id="date" name="selection" value="date">
+                <input type="radio" class="choix" name="selection" value="date">
                 <label for="date">Date</label><br>
-                <input type="radio" id="year" name="selection" value="year">
+                <input type="radio" class="choix" name="selection" value="year">
                 <label for="year">Year</label><br>
 
-                <input type="button" value="Tester" id="Bouton">
-                <div id="cible"></div>            
+                <input type="button" value="Tester" id="Bouton">           
             </form>
-
         </div>
+        <div id="cible"></div>
         <!-- Javascript déporté dans un fichier -->
         <script type="text/javascript" src="fetch.js"></script>
     </body>
