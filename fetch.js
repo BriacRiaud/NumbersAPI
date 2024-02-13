@@ -21,4 +21,10 @@ async function request() { //Fonction de requête vers l'API
   let response = await fetch('http://numbersapi.com/'+nombre+'/'+selected+'?json'); //Requête vers l'API avec les différents paramètres 
   let json = await response.json();
   console.log(json);
+
+  const textHTML = document.createTextNode(json.text); //Création du texte composé du résultat de la requête
+  div = document.createElement("div"); //Création d'une div
+  div.appendChild(textHTML); //Ajout du texte comme enfant de la div
+  const cible = document.getElementById("cible"); //Ciblage de la div cible
+  cible.appendChild(textHTML); //Ajout du texte comme enfant de la div cible
 }
