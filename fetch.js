@@ -22,9 +22,11 @@ async function request() { //Fonction de requête vers l'API
   let json = await response.json();
   console.log(json);
 
-  const textHTML = document.createTextNode(json.text); //Création du texte composé du résultat de la requête
+  let texthtml = document.createElement("p");//Création du texte composé du résultat de la requête
+  texthtml.textContent = json.text;
   div = document.createElement("div"); //Création d'une div
-  div.appendChild(textHTML); //Ajout du texte comme enfant de la div
+  div.appendChild(texthtml); //Ajout du texte comme enfant de la div
   const cible = document.getElementById("cible"); //Ciblage de la div cible
-  cible.appendChild(textHTML); //Ajout du texte comme enfant de la div cible
+  cible.insertBefore(texthtml, cible.querySelector("p"));
+  //cible.appendChild(texthtml); //Ajout du texte comme enfant de la div cible
 }
