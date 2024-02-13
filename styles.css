@@ -15,7 +15,7 @@
     font-style: italic;
     color: white;
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 body {
@@ -36,7 +36,7 @@ body {
     position: absolute;
     text-shadow: none;
     color : white;
-    top: 230px;
+    top: 150px;
 }
 
 #explaination{
@@ -55,7 +55,7 @@ body {
     width: 100px;
     height: 100px;
     position: absolute;
-    top: 250px;
+    top: 168px;
     left: 100px;
     transform: rotate(33deg);
 
@@ -102,9 +102,11 @@ label{
     text-shadow: #cce4f4 0px 0px 10px;
     font-size: 2.3em;
     text-align:center;
-    display:inline-block;
     border: solid white 3px;
     background-color:black;
-    margin-top: 100px;
+    margin-top: 50px;
+    overflow: scroll;
+    height:200px;
+    overflow-x: hidden;
 }
 
