@@ -1,4 +1,5 @@
-.titre {
+
+.titre { /* Définition des propriétés du Titre Principale */
     text-shadow: #cce4f4 0px 0px 10px, #cce4f4 0 0 60px;
     margin: 20px;
     color: white;
@@ -9,7 +10,14 @@
     text-align: center;
 }
 
-#sous-titre {
+@media screen and (max-width: 400px) { /* Réduction de la taille du Titre Principale pour mobile */
+    .titre {
+        margin: 50px;
+        font-size: 3em;
+    }
+  }
+
+#sous-titre { /* Définition des propriétés du sous-titre */
     text-shadow: #cce4f4 0px 0px 10px;
     font-size: 2.5em;
     font-style: italic;
@@ -18,13 +26,20 @@
     margin-bottom: 50px;
 }
 
-body {
+@media screen and (max-width: 400px) { /* Réduction de la taille du sous-titre pour mobile*/
+    #sous-titre {
+        font-size: 1,5em;
+    }
+  }
+
+
+body { /* Définition du fond d'écran général du site */
     background-image: url("https://w.forfun.com/fetch/c1/c106475dca9b6ebc5771abce1fc95782.jpeg") ;
     background-size:absolute;
     opacity: 1;
 }
 
-#sandbox-text {
+#sandbox-text { /* Définition du mot "Explications" mis en rotation */
     -moz-transform: rotate(-9deg);
     -ms-transform: rotate(-9deg);
     -webkit-transform: rotate(-9deg);
@@ -39,7 +54,12 @@ body {
     top: 150px;
 }
 
-#explaination{
+@media screen and (max-width: 400px) { /* Suprime le mot "Explications" pour une meilleure clareté */
+    #sandbox-text {
+        opacity: 0;
+    }
+}
+#explaination{ /* Définition des propriétés des explications */
     text-shadow: #cce4f4 0px 0px 10px;
     font-size: 1.4em;
     color: white;
@@ -51,7 +71,16 @@ body {
     writing-mode: horizontal-tb; 
 }
 
-#arrow{
+@media screen and (max-width: 400px) { /* Réduction de la taille pour les mobiles*/
+    #explaination {
+        margin-top:150px;
+        font-size: 1em;
+        inline-size: auto;
+
+    }
+}
+
+#arrow{ /* Définition de la flèche en dessous du mot explications */
     width: 100px;
     height: 100px;
     position: absolute;
@@ -61,7 +90,13 @@ body {
 
 }
 
-#nombre {
+@media screen and (max-width: 400px) { /* Supprime la flèche pour une meilleure clareté */
+    #arrow {
+        opacity: 0;
+    }
+}
+
+#nombre { /* Définition des propriétés du form remplissable */
     border: solid white 3px;
     border-radius: 3px;
     background-color: black;
@@ -73,13 +108,19 @@ body {
 
 }
 
-.grid{
+.grid{ /* Définition d'une grid pour contenir également les 3 éléments le composant*/
     display: grid;
     grid-template-columns:1fr 1fr 1fr  ;
     /*border: white 3px solid;*/
 }
 
-#arrow_mid{
+@media screen and (max-width: 400px) { /* Supprime le grid car ça ne rend pas bien sur un téléphone */
+    .grid {
+        display:block;
+    }
+}
+
+#arrow_mid{ /* Définition des propriétés de la flèche du millieu */
     width: 200px;
     height: 200px;
     margin-left:20%;
@@ -87,17 +128,31 @@ body {
     text-align: center;
 }
 
-.choix{
+@media screen and (max-width: 400px) { /* Rotation de la flèche vers le bas pour être en adéquation avec la disposition en mobile */
+    #arrow_mid {
+        display:block;
+        transform: rotate(90deg);
+        margin-top:-5%;
+    }
+}
+
+@media screen and (max-width: 400px) { /* Form mis au millieu de la page pour les mobiles */
+    form {
+        text-align: center;
+    }
+}
+
+.choix{ 
     color: white;
     margin-bottom: 10px;
 }
 
-label{
+label{ 
     color: white;
     font-weight:bold;
 }
 
-#cible{
+#cible{ /* Définition des propriétés de la réponse de l'API */
     color:white;
     text-shadow: #cce4f4 0px 0px 10px;
     font-size: 2.3em;
